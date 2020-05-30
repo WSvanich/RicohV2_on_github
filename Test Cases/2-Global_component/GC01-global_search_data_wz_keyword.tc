@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>start from homepage
+-input &quot;ห้างหุ้นส่วนจำกัด&quot; in global search, click search
+-click back to go back to homepage</description>
+   <name>GC01-global_search_data_wz_keyword</name>
+   <tag>global, home, search</tag>
+   <comment></comment>
+   <testCaseGuid>66c25f3b-bac2-4457-a5eb-087e4ccfcdec</testCaseGuid>
+</TestCaseEntity>

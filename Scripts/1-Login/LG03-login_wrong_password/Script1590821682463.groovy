@@ -14,17 +14,16 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://rthv2.opencloud.digital/')
 
-WebUI.setText(findTestObject('Object Repository/Page_Ricoh Thailand Limited/input_Username_username'), 'admin')
+WebUI.setText(findTestObject('Page_Ricoh Thailand Limited/input_Username_username'), 'admin')
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Page_Ricoh Thailand Limited/input_Username_password'), 'yHHIagb6/g9oNVQLnxXYtA==')
+WebUI.setText(findTestObject('Object Repository/Page_Ricoh Thailand Limited/input_Username_password'), 'Opencloud1')
 
 WebUI.click(findTestObject('Object Repository/Page_Ricoh Thailand Limited/button_Sign in'))
 
-WebUI.verifyTextPresent('Dashboard', false)
+WebUI.verifyTextPresent('Invalid credentials', false)
 

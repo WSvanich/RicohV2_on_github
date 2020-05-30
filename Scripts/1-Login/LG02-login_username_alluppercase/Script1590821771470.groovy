@@ -17,13 +17,13 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://rthcrm.ricoh.co.th/')
+WebUI.navigateToUrl('http://rthv2.opencloud.digital/')
 
-WebUI.setText(findTestObject('Page_Ricoh Thailand Limited/input_Username_username'), 'Admin')
+WebUI.setText(findTestObject('Object Repository/Page_Ricoh Thailand Limited/input_Username_username'), 'ADMIN')
 
-WebUI.setText(findTestObject('Page_Ricoh Thailand Limited/input_Username_password'), 'asdf1234')
+WebUI.setText(findTestObject('Object Repository/Page_Ricoh Thailand Limited/input_Username_password'), 'opencloud1')
 
-WebUI.click(findTestObject('Page_Ricoh Thailand Limited/button_Sign in'))
+WebUI.click(findTestObject('Object Repository/Page_Ricoh Thailand Limited/button_Sign in'))
 
-WebUI.verifyTextPresent('Invalid username or password', false)
+WebUI.verifyTextPresent('Dashboard', false)
 
